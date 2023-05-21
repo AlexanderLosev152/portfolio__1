@@ -1,0 +1,53 @@
+*::selection {
+  color: #fff;
+  background: $main-color;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: $main-color;
+  border-radius: 5rem;
+}
+
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  // color: $text-color;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 18px 10%;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
