@@ -51,14 +51,14 @@
   width: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   align-items: center;
   gap: 1.5rem;
 }
 .home-text {
   span {
     font-size: 1.4rem;
-    font-weight: 600;    
+    font-weight: 600;
   }
   h1 {
     font-size: 3.4rem;
@@ -77,7 +77,7 @@
   display: inline-block;
   background: $text-color;
   padding: 0.8rem 2rem;
-  color: #fff;  
+  color: #fff;
   &:hover {
     background: $main-color;
     letter-spacing: 2px;
@@ -90,27 +90,102 @@
 
 // about
 
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 100px;
+}
+.about-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h1 {
+    color: $main-color;
+    font-size: 1.7rem;
+    span {
+      border-bottom: 3px solid $main-color;
+    }
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .about-img {
+    width: 150px;
+    height: 150px;
+    margin-top: 2rem;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      background: $main-color;
+    }
+  }
+}
+.about-text {
+  .social {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    a {
+      margin-right: 1rem;
+      padding: 10px 10px 6px 10px;
+      background: $text-color;
+      border-radius: 10%;
+      &:hover {
+        background: $main-color;
+      }
+    }
+  }
+  p {
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+}
 
+// services
 
+.services {
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  .box {
+    text-align: center;
+    border: 2px solid $text-color;
+    padding: 20px;
+    border-radius: 0 2rem 0 0;
+    box-shadow: 10px 11px 11px rgb(14 55 54 /15%);
+    i {
+      color: #fff;
+      padding: 10px 10px 0px 10px;
+      font-style: 24px;
+      background: $text-color;
+      border-radius: 4px;
+    }
+    h2 {
+      font-size: 1.1rem;
+      margin: 1rem 0 0.5rem;
+    }
+    &:hover {
+      background: $text-color;
+      color: #fff;
+      transition: 0.2s;
+      i {
+        background: #fff;
+        color: $text-color;
+      }
+    }
+  }
+}
 
 .wrapper {
 }

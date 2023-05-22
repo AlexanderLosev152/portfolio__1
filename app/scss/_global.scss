@@ -30,7 +30,6 @@ img {
 
 section {
   padding: 18px 10%;
-
 }
 
 .wrapper {
@@ -50,4 +49,16 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.heading {
+  text-align: center;
+  h1 {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: $main-color;
+    span {
+      border-bottom: 3px solid $main-color;
+    }
+  }
 }
