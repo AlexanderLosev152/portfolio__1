@@ -187,6 +187,69 @@
   }
 }
 
+// portfolio
+
+.portfolio {
+}
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  .box {
+    position: relative;
+    height: 220px;
+    box-shadow: 10px 11px 11px rgb(14 55 54 /15%);
+    overflow: hidden;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    &:hover {
+      background: red;
+      .content {
+        top: 0;
+        transition: 0.2s;
+      }
+    }
+    .box-img {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .content {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: rgb(28, 40, 68, 0.8);
+      i {
+        padding: 10px;
+        font-size: 24px;
+        border-radius: 4px;
+        background: #fff;
+        color: $text-color;
+      }
+      h3 {
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.content {
+}
+
 .wrapper {
 }
 .main {
