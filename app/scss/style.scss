@@ -223,6 +223,7 @@
       position: absolute;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       top: -100%;
       left: 0;
@@ -247,12 +248,59 @@
   }
 }
 
-.content {
+// contact
+
+.contact {
+}
+.heading {
+}
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  form {
+    position: relative;
+    width: 400px;
+    input,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      outline: none;
+      background: rgb(28, 40, 68, 0.8);
+      margin-bottom: 0.5rem;
+      border-radius: 4px;
+      color: #fff;
+      ::placeholder {
+        color: #fff;
+      }
+    }
+    textarea {
+      resize: none;
+      height: 200px;
+    }
+  }
 }
 
-.wrapper {
+.send-bnt {
+  max-width: 110px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  &:hover {
+    background: $main-color;
+    transition: 0.2s;
+  }
 }
-.main {
-}
+
+// footer
+
 .footer {
+  .copyright {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    background: $text-color;
+  }
 }
